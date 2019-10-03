@@ -7,7 +7,7 @@
 
 void ThreadClass2::worker() {
 
-    for (int i=0; i<40000; i++) {
+    for (int i=0; i<200; i++) {
         std::cout << "*** Thread 2 Worker spamming! ***" << std::endl;
     }
 

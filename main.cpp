@@ -8,13 +8,18 @@ void signal_handler(int signal) {
 }
 
 int main() {
-    int limit = 4000;
+    int limit = 100;
 
     std::signal(SIGTERM, signal_handler);
 
+    std::cout<< "Program initialized" << std::endl;
+
     ThreadClass threadClass = ThreadClass(limit);
 
-    std::cout<< "Program initialized" << std::endl;
+    std::cout<< "Returned from ThreadClass in main..." << std::endl;
+
+
+
 
     return 0;
 }

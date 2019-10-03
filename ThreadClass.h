@@ -12,6 +12,16 @@
 
 class ThreadClass {
 
+private:
+
+    ThreadClass2 threadClass2;
+
+    void startWorkerThread();
+
+    std::thread localThreadHandler;
+
+    std::thread workerThreadHandler;
+
 public:
 
     ThreadClass(int limit);
@@ -32,14 +42,6 @@ public:
 
     //Destructor
     ~ThreadClass();
-
-private:
-
-    ThreadClass2 threadClass2;
-
-    void startWorkerThread();
-
-    std::thread threadHandler;
 
 };
 
